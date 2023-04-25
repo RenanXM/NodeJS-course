@@ -1,0 +1,8 @@
+Rotas de internet, ou roteamento, são os 
+responsáveis por entregar os pacotes de dados 
+entre hosts, que são dispositivos de rede, 
+o que inclui computadores, roteadores, entre outros.
+
+Pro usuário acessar a homepage(/) existe uma rota no 
+meu servidor Express, assim como qualquer outra pagina
+video, perfil, etc.

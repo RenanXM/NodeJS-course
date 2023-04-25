@@ -1,0 +1,8 @@
+HTTP é um protocolo de transferência que possibilita
+que as pessoas que inserem a URL do seu site na Web 
+possam ver os conteúdos e dados que nele existem. 
+A sigla vem do inglês Hypertext Transfer Protocol.
+
+REQUISIÇÃO -> RESPOSTA
+http conecta os dois
+protocolo que move a web

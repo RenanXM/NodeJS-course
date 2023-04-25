@@ -1,0 +1,26 @@
+->entrar: mysql -uroot -p
+->criar base de dádos: CREATE DATABASE <nome>;
+->mostrar bases de dados: SHOW DATABASES;
+->usar alguma: USE <nome do banco de dados>
+->mostrar tabelas: SHOW TABLES;
+->criar(básico): CREATE ver arquivo 'teste.sql'
+->descrever a estrutura da tablea: DESCRIBE <nometabela>
+->inserir: INSERT ver arquivo 'teste.sql'
+->ver todos os dados: SELECT * FROM usuarios
+->ESPECIFICAR: WHERE (condição) (ver arquivo)
+tipos de dados no MySQL
+->DELETAR: DELETE (ver arquivo)
+->ATUALIZAR DADO: UPDATE (ver arquivo)
+
+
+
+
+
+
+tipos de dados
+    - texto
+    - char 
+    - int 
+    - float
+    - dat
+    - arquivos
