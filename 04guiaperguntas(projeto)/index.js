@@ -22,3 +22,5 @@ app.get("/:nome/:lang", (req, res) => {
 
 app.listen(8080, () => {console.log("App rodando!");});
 
+//teste
+
