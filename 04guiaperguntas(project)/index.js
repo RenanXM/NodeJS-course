@@ -23,6 +23,8 @@ app.use(bodyParser.json());
 
 
 // Rotas
+
+// Inicial
 app.get("/",(req, res) => {
     Pergunta.findAll({raw:true, order: [
         ['id','DESC'] //ASC = crescente, DESC = decrescente
