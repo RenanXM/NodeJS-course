@@ -1,6 +1,25 @@
-<%- include ('partials/header.ejs'); %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia perguntas</title>
+</head>
 <body>
-    <%- include ('partials/navbar.ejs'); %>
-    <h1> Estio do Bootstrap</h1>
+    <h1>Guia perguntas</h1>
+    <hr>
+    <h1>Lista de perguntas</h1>
+
+    <p><%= nome %></p>
+    <p><%= lang %></p>
+    <p><%= empresa %></p>
+    <p><%= inscritos %></p>
+
+    <% if(msg == true) { %>
+        <h3>Isso é uma mensagem de erro</h3>
+    <%}%>
+
+
 </body>
-<%- include ('partials/footer.ejs'); %>
+</html>
