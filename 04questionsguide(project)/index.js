@@ -14,7 +14,7 @@ connection
         console.log("msgErro")
     })
 
-// Estou dizendo para o Express usar o EJS como View engine
+// Estou dizendo para o Express usar o EJS como View engine!
 app.set('view engine','ejs');
 app.use(express.static('public'));
 // Body parser
