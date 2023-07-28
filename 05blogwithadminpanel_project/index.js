@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 // Static
 app.use(express.static('public'));
 
-// Body parser
+// Body parser (pegar dados de formulário)
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
