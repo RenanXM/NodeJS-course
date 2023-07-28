@@ -3,6 +3,7 @@ const router = express.Router();
 const Category = require("./Category");
 const slugify = require("slugify");
 
+// Renderiza view 'new'
 router.get("/admin/categories/new", (req, res) => {
     res.render("admin/categories/new");
 });
@@ -21,4 +22,20 @@ router.post("/categories/save", (req, res) => {
         res.redirect("admin/categories/new");
     }
 });
+
+
+// Renderiza view 'index' (lista de categorias)
+router.get("/admin/categories", (req,res) => {
+
+    Category.findAll().then(categories => {
+        // passando a variável categories pra view index
+        res.render("admin/categories/index", {categories: categories});
+    });
+
+
+});
+
+
+
+
 module.exports = router;
