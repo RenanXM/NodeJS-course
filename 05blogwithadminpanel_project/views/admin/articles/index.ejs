@@ -3,7 +3,7 @@
 <div class="container">
     <hr>
     <h2>Artigos</h2>
-    <a class="btn btn-success" href="/admin/articles/new">Criar nova artigo</a>
+    <a class="btn btn-success" href="/admin/articles/new">Criar novo artigo</a>
     <hr>
     <table class="table table-bordered">
         <thead>
@@ -18,16 +18,18 @@
         <tbody>
 
             <% articles.forEach(articles => { %>
-                <td> <%= articles.id %></td>
-                <td> <%= articles.title %></td>
-                <td> <%= articles.slug %> </td>
-                <td> <%= articles.category.title %></td>
-                <td>
-                    <form method="POST" action="/articles/delete" style="display: inline;" onsubmit="confirmarDelecao(event, this)">
-                        <input type="hidden" name="id" value="<%= article.id %>">
-                        <button class="btn btn-danger">Deletar</button>
-                    </form>
-                </td>
+                <tr>
+                    <td> <%= articles.id %></td>
+                    <td> <%= articles.title %></td>
+                    <td> <%= articles.slug %> </td>
+                    <td> <%= articles.category.title %></td>
+                    <td>
+                        <form method="POST" action="/articles/delete" style="display: inline;" onsubmit="confirmarDelecao(event, this)">
+                            <input type="hidden" name="id" value="<%= articles.id %>">
+                            <button class="btn btn-danger">Deletar</button>
+                        </form>
+                    </td>
+                </tr>
 
             <% }) %>
 
